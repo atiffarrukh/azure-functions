@@ -1,0 +1,25 @@
+{
+  "bindings": [
+    {
+      "authLevel": "function",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "get",
+        "post"
+      ]
+    },
+     { 
+        "type": "queue",
+        "name": "order",
+        "direction": "out",
+        "queueName": "orders",
+        "connection": ""
+     },{
+       "type": "http",
+       "direction": "out",
+       "name": "res"
+     }
+  ]
+}
